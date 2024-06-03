@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+      
+    
+       
+    </style>
+</head>
+<body class="flex items-center justify-center bg-gray-900 p-3 md:p-0">
+    <div class=" mt-10 rounded-lg w-[500px] pb-3 overflow-hidden bg-gray-600">
+        <h1 class="text-teal-500 font-bold text-2xl p-2 text-center bg-gray-800">Number Converter</h1>
+         <div class="pb-2 flex flex-col p-6">
+            <label for="decimalInput" class="py-2 text-zinc-200">Decimal number:</label>
+            <input 
+                class="border p-3 rounded-lg border-teal-400 border-2 bg-gray-800 text-zinc-200
+                outline-none"
+                placeholder="Enter a decimal number ..." 
+                type="number" 
+                id="decimalInput" />
+                <button onclick="convertNumber()" 
+                class="bg-teal-300 w-full p-2  mt-3 rounded-lg text-gray-700 font-bold text-sm hover:bg-gray-800 hover:text-teal-400 duration-200">
+                Convert
+            </button>
+         </div>
+       
+         <div class="bg-gray-800 m-4  rounded-lg mt-5 pb-10">
+            <h2 class="font-bold p-2 text-zinc-200 text-gray-700">Result:</h2>
+            <div id="result" class="p-2 text-teal-400 ml-3">
+           
+            </div>
+         </div>
+    </div>
+
+    <script src="converter.js"></script>
+</body>
+</html>
